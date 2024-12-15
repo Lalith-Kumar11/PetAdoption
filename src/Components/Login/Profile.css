@@ -1,0 +1,97 @@
+.profile-container {
+    padding: 40px;
+    max-width: 800px;
+    margin: auto;
+    position: relative;
+    background-color: #f7f4ef;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 30PX;
+}
+
+.profile-details {
+    border: 1px solid #ccc;
+    padding: 30px;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.profile-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+}
+
+.profile-info label {
+    font-weight: bold;
+    color: #333;
+    margin-right: 12px;
+}
+
+.profile-info span {
+    font-size: 16px;
+    color: #555;
+}
+
+.profile-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.logout-btn {
+    background-color: #1D3557;
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.logout-btn:hover {
+    background-color: #3a5b6f;
+}
+
+.my-adoption-btn {
+    background-color: #1D3557;
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.my-adoption-btn:hover {
+    background-color: #3a5b6f;
+}
+
+@media (max-width: 600px) {
+    .profile-container {
+        padding: 20px;
+    }
+
+    .profile-info {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .profile-info label,
+    .profile-info span {
+        font-size: 14px;
+    }
+
+    .logout-btn, .my-adoption-btn {
+        font-size: 14px;
+        padding: 12px;
+    }
+}

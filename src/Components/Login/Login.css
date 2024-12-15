@@ -1,0 +1,178 @@
+.login-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-image: url('D:\SKCT\3rd YEAR 5th SEM\Software design pattern\PawsAndHome\src\Components\Login\background3.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#login-content, #signup-content {
+  background-color: #fff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+}
+
+.login-form, .signup-form {
+  width: 100%;
+}
+
+.login-input-container, .signup-input-container {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background-color: #f9f9f9;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  position: relative;
+  transition: border-color 0.3s ease;
+}
+
+.login-input-container i, .signup-input-container i {
+  color: #007bff;
+  font-size: 1.25rem;
+  padding: 0.75rem;
+  margin-right: 0.5rem;
+}
+
+.login-input-container input, .signup-input-container input {
+  flex: 1;
+  padding: 0.75rem;
+  border: none;
+  background: none;
+  font-size: 1rem;
+  outline: none;
+  padding-right: 2.5rem;
+}
+
+.login-input-container input:focus, .signup-input-container input:focus {
+  border: none;
+  box-shadow: none;
+}
+
+.login-password-toggle-btn {
+  background: none;
+  border: none;
+  color: #000000;
+  font-size: 1.25rem;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  right: 0.75rem;
+  transform: translateY(-50%);
+  transition: color 0.3s ease;
+}
+
+.login-password-toggle-btn:hover {
+  color: #0056b3;
+}
+
+.login-error-msg, .signup-error-msg {
+  color: #ff4d4d;
+  font-size: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.login-btn, .signup-btn {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 20px;
+  background-color: #1D3557;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 1.5rem;
+  width: 100%;
+}
+
+.login-btn:hover, .signup-btn:hover {
+  background-color: #1D3557;
+}
+
+.login-forgot-password-container, .signup-new-user-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.login-forgot-password-content, .signup-new-user-content {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.login-forgot-password-text, .signup-new-user-text {
+  margin: 0;
+  font-size: 0.875rem;
+}
+
+.login-forgot-password-btn, .signup-new-user-btn {
+  padding: 0.5rem 0.75rem;
+  border: none;
+  border-radius: 20px;
+  color: #fff;
+  font-size: 0.75rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin: 0 0.5rem;
+}
+
+.login-forgot-password-btn {
+  background-color: #f29c9c;
+}
+
+.login-forgot-password-btn:hover {
+  background-color: #e08f8f;
+}
+
+.signup-new-user-btn {
+  background-color: #9cf2c3;
+}
+
+.signup-new-user-btn:hover {
+  background-color: #7fd1a1;
+}
+
+.login-toggle-btns {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  width: 100%;
+}
+
+.login-toggle-btn {
+  padding: 0.75rem 1.5rem;
+  border: 2px solid #1D3557;
+  border-radius: 20px;
+  background-color: #fff;
+  color: #1D3557;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 60%;
+  text-align: center;
+}
+
+.login-toggle-btn:hover {
+  background-color: #1D3557;
+  color: #fff;
+}
+
+.login-toggle-btn.active {
+  background-color: #1D3557;
+  color: #fff;
+}
+
+.login-h1 {
+  display: none;
+}

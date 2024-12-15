@@ -1,0 +1,119 @@
+.about-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 30px;
+  background-color:#f2e1b3;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin-top: 30PX;
+}
+
+.about-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-title {
+  font-size: 2.5em;
+  color: #1E3A8A;
+  text-align: center;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-icon {
+  margin-right: 10px;
+  font-size: 1.5em;
+}
+
+.about-description {
+  font-size: 1.2em;
+  color: #333;
+  text-align: justify;
+  line-height: 1.6;
+  max-width: 800px;
+  margin-bottom: 30px;
+}
+
+.about-mission,
+.about-values,
+.about-team {
+  margin-top: 40px;
+  max-width: 800px;
+}
+
+.about-mission-title,
+.about-values-title,
+.about-team-title {
+  font-size: 1.8em;
+  color: #1E3A8A;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.about-mission-description,
+.about-values-item,
+.about-team-description {
+  font-size: 1.1em;
+  color: #555;
+  text-align: justify;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.about-values-list {
+  list-style: none;
+  padding: 0;
+}
+
+.about-values-item {
+  font-size: 1.1em;
+  color: #5a5a5a;
+  text-align: justify;
+  line-height: 1.6;
+  margin-bottom: 10px;
+  padding-left: 1.5em;
+  text-indent: -1.5em;
+}
+
+.about-values-item::before {
+  content: '•';
+  color: #f2b93c;
+  font-size: 1.5em;
+  margin-right: 10px;
+}
+
+.about-team-title {
+  font-size: 1.8em;
+  color: #1E3A8A;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 600px) {
+  .about-container {
+    padding: 20px;
+  }
+
+  .about-title,
+  .about-mission-title,
+  .about-values-title,
+  .about-team-title {
+    font-size: 1.8em;
+  }
+
+  .about-description,
+  .about-mission-description,
+  .about-values-item,
+  .about-team-description {
+    font-size: 1em;
+  }
+}

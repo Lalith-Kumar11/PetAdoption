@@ -1,0 +1,87 @@
+.contact-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-modal-content {
+  background-color: #F1D2A1;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  width: 100%;
+  text-align: center;
+  position: relative;
+}
+
+.contact-modal-title {
+  font-size: 28px;
+  color: #1D3557;
+  margin-bottom: 20px;
+}
+
+.contact-modal-intro {
+  font-size: 16px;
+  color: #1D3557;
+  margin-bottom: 20px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form label {
+  font-size: 16px;
+  color: #333;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  font-size: 16px;
+  color: #333;
+  background-color: #fff;
+}
+
+/* Submit Button */
+.contact-submit-button {
+  background-color: #F1D2A1;
+  color: #1D3557;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-submit-button:hover {
+  background-color: #1D3557; 
+  color: #fff;
+}
+
+.contact-close-button {
+  background: none;
+  border: none;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  cursor: pointer;
+  font-size: 20px;
+  color: #1D3557;
+}
+
+.contact-close-button:hover {
+  color: #F1D2A1;
+}

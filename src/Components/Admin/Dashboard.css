@@ -1,0 +1,51 @@
+.Dashboard-container {
+    padding: 20px;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    min-height: 95vh;
+  }
+  
+.Dashboard-content{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1400px;
+  padding: 20px;
+  gap: 20px;
+  background-color: #1c1c1c;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+  .Dashboard-title {
+    margin-bottom: 20px;
+    color: #fff;
+  }
+  
+  .Dashboard-stats {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+  }
+  
+  .Dashboard-card {
+    background-color: #444;
+    padding: 20px;
+    border-radius: 10px;
+    width: 150px;
+    font-size: 18px;
+    color: #fff;
+  }
+  
+  .Dashboard-chart-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .Dashboard-chart-container canvas {
+    width: 450px !important;
+    height: 450px !important;
+  }
+  

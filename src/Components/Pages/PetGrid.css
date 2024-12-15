@@ -1,0 +1,130 @@
+.petgrid-filter-header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px;
+}
+
+.petgrid-heading {
+    color: #1E3A8A;
+    font-size: 2em;
+    font-family: 'Arial', sans-serif;
+    flex: 1;
+    text-align: center;
+    margin: 0;
+}
+
+.petgrid-filter {
+    display: flex;
+    align-items: center;
+    font-size: 1.2em;
+    color: #1E3A8A;
+    position: relative;
+}
+
+.petgrid-filter-icon {
+    cursor: pointer;
+    margin-right: 10px;
+    color: #1E3A8A;
+}
+
+.petgrid-filter-options {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #fff;
+    border: 1px solid #1E3A8A;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+}
+
+.petgrid-filter-select {
+    margin: 0;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #1E3A8A;
+    width: 150px;
+}
+
+.petgrid-pet-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin: 20px;
+    background-color: #f2e1b3;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.petgrid-pet-card {
+    border: 1px solid #1E3A8A;
+    border-radius: 8px;
+    padding: 10px;
+    width: 200px;
+    transition: transform 0.2s;
+    cursor: pointer;
+    background-color: #fff;
+}
+
+.petgrid-pet-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.petgrid-pet-image {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.petgrid-pet-info {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.petgrid-pet-name {
+    margin: 0;
+    font-size: 1.2em;
+    color: #1E3A8A;
+}
+
+.petgrid-pet-breed {
+    margin: 5px 0 0;
+    color: #777;
+}
+
+.petgrid-pet-category {
+    margin: 5px 0 0;
+    color: #888;
+}
+
+.petgrid-pet-price {
+    margin-top: 10px;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #f2b93c;
+}
+
+.petgrid-pet-card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+    .petgrid-heading {
+        font-size: 1.5em;
+    }
+
+    .petgrid-pet-grid {
+        padding: 10px;
+    }
+
+    .petgrid-pet-card {
+        width: 100%;
+    }
+}

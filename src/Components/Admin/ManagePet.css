@@ -1,0 +1,170 @@
+.managepet-container {
+  padding: 20px;
+  background-color: #000;
+  color: #e0e0e0;
+}
+
+.managepet-content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1400px;
+  padding: 20px;
+  gap: 20px;
+  background-color: #1c1c1c;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.managepet-list-container {
+  width: 100%;
+}
+
+.managepet-list-header {
+  margin-bottom: 20px;
+}
+
+.managepet-list-title {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.managepet-list-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.managepet-list-th,
+.managepet-list-td {
+  padding: 10px;
+  border: 1px solid #444;
+  background-color: #000;
+}
+
+.managepet-list-th {
+  background-color: #333;
+}
+
+.managepet-list-td {
+  text-align: center;
+}
+
+.managepet-view-pet-button,
+.managepet-edit-pet-button,
+.managepet-delete-pet-button {
+  margin: 5px;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.managepet-view-pet-button {
+  background-color: #007bff;
+  color: #e0e0e0;
+}
+
+.managepet-edit-pet-button {
+  background-color: #ffc107;
+  color: #333;
+}
+
+.managepet-delete-pet-button {
+  background-color: #dc3545;
+  color: #e0e0e0;
+}
+
+.managepet-add-pet-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 3px;
+  background-color: #28a745;
+  color: #e0e0e0;
+  cursor: pointer;
+}
+
+.managepet-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.managepet-modal-content {
+  background-color: #2e2e2e;
+  padding: 20px;
+  border-radius: 3px;
+  width: 500px;
+}
+
+.managepet-modal-title {
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.managepet-modal-title-underline {
+  width: 80%;
+  height: 2px;
+  background-color: #ffffff;
+  margin: 10px auto;
+}
+
+.managepet-modal-text {
+  margin-bottom: 10px;
+}
+
+.managepet-modal-text-strong {
+  color: #ff5722;
+}
+
+.managepet-modal-text-pet-image {
+  width: 500px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.managepet-modal-form label {
+  display: block;
+  margin-bottom: 10px;
+  color: #e0e0e0;
+}
+
+.managepet-modal-form input,
+.managepet-modal-form select,
+.managepet-modal-form textarea {
+  width: 100%;
+  padding: 8px;
+  border-radius: 3px;
+  border: 1px solid #444;
+  background-color: #333;
+  color: #e0e0e0;
+}
+
+.managepet-modal-save-button,
+.managepet-modal-cancel-button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.managepet-modal-save-button {
+  background-color: #28a745;
+  color: #e0e0e0;
+}
+
+.managepet-modal-cancel-button {
+  background-color: #dc3545;
+  color: #e0e0e0;
+}

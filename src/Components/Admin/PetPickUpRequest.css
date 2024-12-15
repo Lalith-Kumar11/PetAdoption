@@ -1,0 +1,74 @@
+.PetRequest-container {
+    padding: 20px;
+    background-color: #000;
+    color: #fff;
+    min-height: 95vh;
+  }
+  
+  .PetRequest-title {
+    margin-bottom: 20px;
+    color: #fff;
+    text-align: center;
+  }
+  
+  .PetRequest-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #000;
+
+  }
+  
+  .PetRequest-th, .PetRequest-td {
+    border: 1px solid #333;
+    padding: 10px;
+    text-align: left;
+  }
+
+  .PetRequest-td{
+    background-color: #000;
+  }
+  
+  .PetRequest-th {
+    background-color: #2a2a2a;
+  }
+  
+  .PetRequest-thead, .PetRequest-tbody {
+    background-color: #000;
+  }
+  
+  
+  .PetRequest-button {
+    margin-right: 5px;
+    padding: 5px 10px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .PetRequest-button-accept {
+    background-color: #4CAF50;
+  }
+  
+  .PetRequest-button-reject {
+    background-color: #f44336;
+  }
+  
+  .PetRequest-status {
+    padding: 5px 10px;
+    background-color: #555;
+    border-radius: 5px;
+  }
+
+  .PetRequest-content{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1400px;
+  padding: 20px;
+  gap: 20px;
+  background-color: #1c1c1c;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  }
+  

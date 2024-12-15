@@ -1,0 +1,186 @@
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #e2ceac;
+  color: #333;
+}
+
+.home-hero {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #E2D1B3;
+  padding: 50px 20px;
+  text-align: left;
+  color: #333;
+  border-bottom: 5px solid #1E3A8A;
+}
+
+.home-hero-content {
+  max-width: 550px;
+}
+
+.home-hero h2 {
+  margin: 0;
+  font-size: 2.5em;
+  font-weight: bold;
+  color: #1E3A8A;
+}
+
+.home-hero p {
+  margin: 5px 0 20px;
+  font-size: 1.2em;
+  line-height: 1.5;
+  color: black;
+}
+
+.home-get-started {
+  padding: 15px 30px;
+  font-size: 1.2em;
+  color: white;
+  background-color: #1E3A8A;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+}
+
+.home-get-started:hover {
+  background-color: #3B82F6;
+  transform: translateY(-2px);
+}
+
+.home-get-started svg {
+  margin-left: 10px;
+}
+
+.home-hero-image {
+  max-width: 50%;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.home-hero-image:hover {
+  transform: scale(1.05);
+}
+
+.home-featured-pets {
+  padding: 40px 20px;
+  background-color: #E2D1B3;
+  text-align: center;
+  border-bottom: 5px solid #1E3A8A;
+}
+
+.home-featured-pets h2 {
+  font-size: 2.5em;
+  color: #1E3A8A;
+}
+
+.home-pet-cards {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.home-pet-card {
+  background: #FFFFFF;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  width: 280px;
+  padding: 20px;
+  text-align: center;
+}
+
+.home-pet-card img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+.home-view-pet-button {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 12px 20px;
+  background-color: #1E3A8A;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.home-view-pet-button:hover {
+  background-color: #3B82F6;
+}
+
+.home-testimonials {
+  padding: 40px 20px;
+  background-color: #E2D1B3;
+  text-align: center;
+}
+
+.home-testimonials h2 {
+  font-size: 2.5em;
+  color: #1E3A8A;
+}
+
+.home-testimonial-cards {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.home-testimonial-card {
+  background: #FFFFFF;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  width: 280px;
+  padding: 20px;
+}
+
+.home-testimonial-card p {
+  font-size: 1.1em;
+  line-height: 1.5;
+  color: #1E3A8A;
+}
+
+.home-testimonial-card h4 {
+  margin-top: 10px;
+  font-style: italic;
+  color: #333;
+}
+
+.home-footer {
+  background-color: #333;
+  padding: 20px;
+  text-align: center;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .home-hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .home-hero-image {
+    max-width: 70%;
+    margin-top: 20px;
+  }
+
+  .home-hero-content {
+    text-align: center;
+  }
+
+  .home-pet-cards {
+    flex-direction: column;
+  }
+
+  .home-testimonial-cards {
+    flex-direction: column;
+  }
+}

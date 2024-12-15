@@ -1,0 +1,75 @@
+.managePayment-container {
+    padding: 20px;
+    background-color: #000000;
+    color: #ffffff;
+    min-height: 95vh;
+}
+
+.managePayment-heading {
+    color: #ffffff;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.managePayment-paymentList {
+    margin-top: 20px;
+}
+
+.managePayment-subHeading {
+    color: #e0e0e0;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.managePayment-table {
+    width: 100%;
+    border-collapse: collapse;
+    color: #ffffff;
+}
+
+.managePayment-table th, .managePayment-table td {
+    border: 1px solid #222;
+    padding: 12px;
+    text-align: left;
+}
+
+.managePayment-table th {
+    background-color: #222;
+    color: #ffffff;
+}
+
+.managePayment-tableRow {
+    background-color: #121212;
+}
+
+.managePayment-tableRow:nth-child(even) {
+    background-color: #000000;
+}
+
+.managePayment-tableRow:nth-child(odd) {
+    background-color: #000000; 
+}
+
+.managePayment-table td {
+    font-size: 0.9em;
+}
+
+.managePayment-table th, .managePayment-table td {
+    border-radius: 4px;
+}
+
+.managePayment-table td{
+    background-color: #000000;
+}
+
+.managePayment-content{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1400px;
+  padding: 20px;
+  gap: 20px;
+  background-color: #1c1c1c;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}

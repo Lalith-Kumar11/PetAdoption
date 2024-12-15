@@ -1,0 +1,97 @@
+.my-adoption-container {
+    padding: 40px;
+    max-width: 1000px;
+    margin: auto;
+    background-color: #E2D1B3;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    height: auto;
+    min-height: 47vh;
+    margin-top: 30PX;
+}
+
+.my-adoption-container h2 {
+    text-align: center;
+    color: #1D3557;
+    margin-bottom: 20px;
+}
+
+.adoption-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.adoption-table th,
+.adoption-table td {
+    border: 1px solid #ddd;
+    padding: 12px 15px;
+    text-align: left;
+}
+
+.adoption-table th {
+    background-color: #1D3557;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 14px;
+}
+
+.adoption-table td {
+    background-color: #F1D2A1;
+    color: #1D3557;
+}
+
+.adoption-table tr:nth-child(even) td {
+    background-color: #E6C09D;
+}
+
+.adoption-table tr:hover td {
+    background-color: #1D3557;
+    color: white;
+}
+
+.adoption-table strong {
+    color: #1D3557;
+}
+
+.no-applications {
+    text-align: center;
+    color: #888;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.payment-button {
+    background-color: #1D3557;
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.payment-button:hover {
+    background-color: #14233C;
+}
+
+@media (max-width: 600px) {
+    .my-adoption-container {
+        padding: 20px;
+    }
+
+    .adoption-table th,
+    .adoption-table td {
+        font-size: 12px;
+        padding: 10px 12px;
+    }
+
+    .payment-button {
+        font-size: 12px;
+        padding: 10px 12px;
+    }
+}

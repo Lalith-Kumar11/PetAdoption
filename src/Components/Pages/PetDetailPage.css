@@ -1,0 +1,221 @@
+.petdetailpage-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto 1fr;
+    gap: 0;
+    padding: 20px;
+    background-color: #f2e1b3;
+    border-radius: 8px;
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    margin-top: 20px;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.petdetailpage-left, .petdetailpage-right {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 5px solid #1E3A8A;
+}
+
+.petdetailpage-left {
+    border-right: 5px solid #1E3A8A;
+    padding-right: 20px;
+}
+
+.petdetailpage-heading {
+    color: #1E3A8A;
+    text-align: left;
+    margin-bottom: 20px;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.petdetailpage-info {
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.petdetailpage-info p {
+    margin: 0;
+    font-size: 1.1em;
+}
+
+.petdetailpage-info p strong {
+    font-weight: bold;
+    color: #1E3A8A;
+}
+
+.petdetailpage-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-left: 20px;
+}
+
+.petdetailpage-slider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 8px;
+    position: relative;
+    width: 70%;
+    height: 300px;
+    background-color: #f2e1b3;
+    margin-bottom: 20px;
+}
+
+.petdetailpage-image-large {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.petdetailpage-price {
+    color: #f2b93c;
+    font-size: 1.4em;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.petdetailpage-button-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.petdetailpage-adopt-button, .petdetailpage-back-button {
+    background-color: #1E3A8A;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    margin: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.petdetailpage-adopt-button:hover, .petdetailpage-back-button:hover {
+    background-color: #f2b93c;
+}
+
+.petdetailpage-adopt-button.disabled {
+    background-color: #f9c1c1;
+    color: white;
+    cursor: not-allowed;
+}
+
+.petdetailpage-bottom {
+    grid-column: span 2;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f2e1b3;
+    border-radius: 8px;
+}
+
+.petdetailpage-bottom-heading {
+    text-align: center;
+    font-size: 1.8em;
+    color: #1E3A8A;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.petdetailpage-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.petdetailpage-grid-item {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.petdetailpage-grid-item img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.petdetailpage-grid-item p {
+    margin-top: 10px;
+    color: #333;
+}
+
+@media (max-width: 768px) {
+    .petdetailpage-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 1fr auto;
+    }
+
+    .petdetailpage-left, .petdetailpage-right {
+        width: 100%;
+    }
+
+    .petdetailpage-slider {
+        width: 100%;
+        height: 200px;
+    }
+
+    .petdetailpage-info p {
+        font-size: 1em;
+    }
+
+    .petdetailpage-price {
+        font-size: 1.2em;
+    }
+
+    .petdetailpage-adopt-button, .petdetailpage-back-button {
+        font-size: 0.9em;
+        padding: 8px 16px;
+    }
+
+    .petdetailpage-bottom {
+        margin-top: 30px;
+    }
+
+    .petdetailpage-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+.petdetailpage-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.petdetailpage-overlay .petdetailpage-container {
+    opacity: 0.3;
+    pointer-events: none;
+}
+
+.petdetailpage-overlay .petdetailpage-container.active {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.petdetailpage-overlay .petdetailpage-container {
+    transition: opacity 0.3s ease-in-out;
+}

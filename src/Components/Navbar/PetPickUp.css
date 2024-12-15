@@ -1,0 +1,140 @@
+.PetPickUp-pet-pickup-request-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #E2D1B3;
+  padding: 20px;
+}
+
+.PetPickUp-pet-pickup-request {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  max-width: 1200px;
+  width: 100%;
+}
+
+.PetPickUp-form-section {
+  flex: 1;
+  padding: 20px;
+}
+
+.PetPickUp-notice {
+  display: block;
+  font-weight: bold;
+  color: #1E3A8A;
+  margin-bottom: 10px;
+}
+
+.PetPickUp-notice-info {
+  display: block;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.PetPickUp-form-section h1 {
+  margin-bottom: 20px;
+  color: #1E3A8A;
+  font-family: 'Arial', sans-serif;
+}
+
+.PetPickUp-form-group {
+  margin-bottom: 15px;
+}
+
+.PetPickUp-form-group label {
+  display: block;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+.PetPickUp-pet-pickup-input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  max-width: 750px;
+  font-size: 1em;
+}
+
+.PetPickUp-checkbox-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.PetPickUp-pet-pickup-checkbox {
+  margin-right: 10px;
+}
+
+.PetPickUp-pet-pickup-submit {
+  background-color: #f2b93c;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 1.1em;
+}
+
+.PetPickUp-pet-pickup-submit:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.PetPickUp-pet-pickup-submit:not(:disabled):hover {
+  background-color: #e08f8f;
+}
+
+.PetPickUp-contact-info {
+  margin-top: 20px;
+  color: #777;
+}
+
+.PetPickUp-image-section {
+  flex: 0 0 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: #f7f4ef;
+}
+
+.PetPickUp-pet-image {
+  height: 500px;
+  width: 300px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+  .PetPickUp-pet-pickup-request {
+      flex-direction: column;
+      max-width: 100%;
+      width: 100%;
+  }
+
+  .PetPickUp-form-section {
+      padding: 15px;
+  }
+
+  .PetPickUp-image-section {
+      flex: 1 1 100%; 
+      padding: 10px;
+  }
+
+  .PetPickUp-pet-image {
+      width: 100%;
+      height: auto;
+  }
+
+  .PetPickUp-pet-pickup-input,
+  .PetPickUp-pet-pickup-submit {
+      max-width: 100%;
+  }
+}

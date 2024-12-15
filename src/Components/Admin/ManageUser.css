@@ -1,0 +1,178 @@
+.manageUser-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: #000;
+}
+
+.manageUser-content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1400px;
+  padding: 20px;
+  gap: 20px;
+  background-color: #1c1c1c;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.manageUser-header-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.manageUser-user-list-container {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.manageUser-user-list-header {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.manageUser-user-list-title {
+  font-size: 1.5em;
+  color: #e0e0e0;
+  margin: 0;
+}
+
+.manageUser-user-list-table {
+  width: 100%;
+  max-width: 1200px;
+  border-collapse: collapse;
+  margin: 0;
+}
+
+.manageUser-user-list-th,
+.manageUser-user-list-td {
+  padding: 12px;
+  border: 1px solid #444;
+  text-align: left;
+}
+
+.manageUser-user-list-th {
+  background-color: #333;
+  color: #fff;
+}
+
+.manageUser-user-list-td {
+  background-color: #000;
+  color: #e0e0e0;
+}
+
+.manageUser-view-user-button,
+.manageUser-delete-user-button {
+  padding: 10px 15px;
+  margin: 5px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.manageUser-view-user-button {
+  background-color: #4caf50;
+  color: #fff;
+}
+
+.manageUser-view-user-button:hover {
+  background-color: #388e3c;
+}
+
+.manageUser-delete-user-button {
+  background-color: #f44336;
+  color: #fff;
+}
+
+.manageUser-delete-user-button:hover {
+  background-color: #d32f2f;
+}
+
+.manageUser-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.manageUser-modal-content {
+  background: #1c1c1c; 
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  max-width: 600px;
+  width: 100%;
+  animation: manageUser-fadeIn 0.3s ease-out;
+}
+
+
+.manageUser-modal-title {
+  font-size: 1.8em;
+  color: #e0e0e0;
+  margin-top: 0;
+  text-align: center;
+  font-weight: 600;
+  border-bottom: 2px solid #333;
+  padding-bottom: 10px;
+}
+
+
+.manageUser-modal-text {
+  margin: 20px 0;
+  font-size: 1.1em;
+  color: #e0e0e0;
+  line-height: 1.6;
+}
+
+
+.manageUser-modal-text strong {
+  color: #ff5722; 
+  font-weight: 600;
+}
+
+
+.manageUser-modal-text span {
+  color: #e0e0e0;
+  font-weight: normal;
+}
+
+.manageUser-modal-close-button {
+  padding: 12px 20px;
+  margin-top: 20px;
+  border: none;
+  border-radius: 6px;
+  background-color: #ff5722;
+  color: #fff;
+  font-size: 1em;
+  cursor: pointer;
+  display: block;
+  width: 100%;
+}
+
+.manageUser-modal-close-button:hover {
+  background-color: #e64a19;
+}
+
+@keyframes manageUser-fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
